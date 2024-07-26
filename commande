@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plateforme de Bon de Commande</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bon de Commande en Ligne</h1>
+    <form id="orderForm" name="orderForm">
+      <div class="form-group">
+        <label for="customerName">Nom du client :</label> <input type="text" id="customerName" name="customerName" required="">
+      </div>
+      <div class="form-group">
+        <label for="productName">Produit :</label> <input type="text" id="productName" name="productName" required="">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantité :</label> <input type="number" id="quantity" name="quantity" min="1" required="">
+      </div><button type="submit">Envoyer Bon de Commande</button>
+    </form>
+    <p id="message" class="message"></p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="script.js"></script>
+</body>
+</html>
